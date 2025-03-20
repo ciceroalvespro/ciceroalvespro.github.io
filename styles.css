@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A192F;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #0077B6, #00A8E8);
+    color: white;
+    padding: 25px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00A8E8;
+}
+
+section {
+    padding: 60px;
+    background: #112240;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 119, 182, 0.3);
+    max-width: 900px;
+    text-align: center;
+}
+
+h2 {
+    color: #00A8E8;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #233554;
+    color: white;
+}
+
+button {
+    background: #0077B6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00A8E8;
+}
+
+footer {
+    background: #0A192F;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background: #1EBE5D;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #00A8E8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
