@@ -1,128 +1,210 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333;
-    text-align: left;
+/* IMPORTAÇÃO DAS FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* CONFIGURAÇÃO CURINGA DA TELA INICIAL */
+* {
+    box-sizing: border-box;
 }
 
-header {
-    background: #004080;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS DO MENU NAVBAR */
+.navbar {
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex: 20%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+
+}
+
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    color: #180f4a;
+    font-size: 34px;
+}
+
+.menu a {
+    color: #180f4a;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #FF2978;
+    border-top: 4px solid #180f4a;
+
+}
+
+#botao {
+    background: #180f4a;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover {
+    border: none;
+    background: #FF2978;
+
+}
+
+/* CSS DO HEADER */
+.header {
+    padding-top: 100px;
+    height: auto;
+    background: white;
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+
+}
+
+.headline h2 {
+    font-weight: 900px;
+    font-size: 20px;
+    color: #180f4a;
+    padding: 0;
+    margin: 0;
+}
+
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #00A8E8;
-}
-
-section {
-    padding: 100px 20px;
-    background: white;
-    margin: 50px auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1100px;
+.headline p {
+    color: gray;
     text-align: left;
 }
 
-h2 {
-    color: #004080;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.social-button {
+.contact-btn {
     display: inline-block;
-    padding: 12px 20px;
-    border-radius: 8px;
+    background: #FF2978;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
     text-decoration: none;
+
+}
+
+.contact-btn:hover {
+    background: #180f4a;
+
+}
+
+/* SESSÃO 1*/
+section {
+    display: inline-block;
+    margin-top: 80px;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Lobster', cursive;
     font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
+    color: #180f4a;
 }
 
-.instagram {
-    background: #E4405F;
-    color: white;
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
 }
 
-.instagram:hover {
-    background: #D83458;
-}
-
-.twitter {
-    background: #1DA1F2;
-    color: white;
-}
-
-.twitter:hover {
-    background: #0D8DEB;
-}
-
-.article {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.article img {
-    width: 300px;
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #FF2978;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
-.article-content {
-    flex: 1;
+.card:hover {
+    background: #FF2978;
+    color: white;
+    padding: 40px;
 }
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+/* FOOTER */
 
 footer {
-    background: #004080;
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #180f4a, #090422, black);
+    text-align: center;
+    border-top: 5px solid #FF2978;
+}
+
+.logo-rodape {
+    padding: 100px;
+}
+
+.agencia {
+    font-family: 'Lobster', cursive;
     color: white;
-    padding: 20px 0;
-    font-size: 14px;
-    box-shadow: 0 -2px 4px rgba(0,
+    font-size: 34px;
+}
+
+/* WHATS APP*/
+.whats {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+
+}
