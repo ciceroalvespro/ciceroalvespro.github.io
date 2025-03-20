@@ -208,3 +208,17 @@ footer {
     right: 5px;
 
 }
+.card {
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    background: #FF2978;
+    color: white;
+    transform: scale(1.05); /* Aumenta levemente o card */
+}
+
+.card:hover .card-text {
+    opacity: 0.5;
+}
+
