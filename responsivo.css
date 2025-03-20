@@ -1,43 +1,66 @@
-@media screen and (max-width:1005px) {
-    .menu {
-        display: none;
-    }
-
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 1024px) {
     .navbar {
-        position: relative;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
     }
-
     .logo {
+        text-align: center;
         margin: 0;
-        text-align: center;
     }
-
-    .header {
-        padding-top: 50px;
+    .menu {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .menu a {
         display: block;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajuste dos Cards */
+    .card {
+        width: 90%; /* Deixa os cards mais largos */
+        margin: 10px auto; /* Centraliza os cards */
+        padding: 15px;
     }
 
+    /* Ajuste do Header */
     .headline {
-        flex: 100%;
-        margin: 5%;
         text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
-    .headline p {
-        text-align: center;
+    .headline h2 {
+        font-size: 22px;
     }
 
     .img-headline {
-        flex: 100%;
-        margin: 5%;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste do Botão */
+    .contact-btn {
+        display: block;
         text-align: center;
-    }
-
-    .whats {
-        display: none;
-    }
-
-    .card {
         width: 100%;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    /* Ajuste do Footer */
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo-rodape {
+        padding: 50px 0;
     }
 }
